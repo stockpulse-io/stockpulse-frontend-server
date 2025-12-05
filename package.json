@@ -1,0 +1,19 @@
+{
+  "name": "stockpulse-frontend-api",
+  "version": "1.0.0",
+  "description": "Socket.io server for StockPulse frontend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "redis": "^4.6.10",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
