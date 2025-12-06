@@ -1,0 +1,14 @@
+services:
+  frontend_server:
+    build: .
+    container_name: frontend_server
+    env_file: .env
+    ports:
+      - "4000:4000"
+    networks:
+      - stockpulse-net
+    restart: unless-stopped
+
+networks:
+  stockpulse-net:
+    external: true
